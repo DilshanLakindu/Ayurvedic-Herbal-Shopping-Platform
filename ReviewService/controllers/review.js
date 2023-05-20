@@ -5,11 +5,6 @@ const reviewController = {
 		try {
 			console.log(req.body.cartItems);
 			const { rating, discription } = req.body;
-			if (!rating || !discription)
-				return res
-					.status(400)
-					.json({ msg: "Please fill in all fields." });
-
 			const newReview = new Review({
 				rating,
 				discription,

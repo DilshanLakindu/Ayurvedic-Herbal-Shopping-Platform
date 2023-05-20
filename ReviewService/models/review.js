@@ -6,7 +6,7 @@ const ReviewSchema = new Schema({
 		type: String,
 	},
 	discription: {
-		type: Number,
+		type: String,
 	},
 });
 
